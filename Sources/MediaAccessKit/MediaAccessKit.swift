@@ -14,8 +14,8 @@ public struct MediaItem {
 
 @MainActor
 @available(iOS 14, *)
-final class MediaManager: NSObject {
-    public static let shared = MediaManager()
+final class MediaAccessManager: NSObject {
+    public static let shared = MediaAccessManager()
     
     private weak var presentingVC: UIViewController?
     
@@ -119,7 +119,7 @@ final class MediaManager: NSObject {
 
 // 앨범
 @available(iOS 14, *)
-extension MediaManager: PHPickerViewControllerDelegate {
+extension MediaAccessManager: PHPickerViewControllerDelegate {
  
     private func permissionCamera() {
         
@@ -241,6 +241,8 @@ extension MediaManager: PHPickerViewControllerDelegate {
             print("포토 권한을 물어본 적이 있고, 포토 권한 Y 상태")
 //            PHPhotoLibrary.shared().presentLimitedLibraryPicker(from: (self.presentingVC)!)
             openAlbum()
+        @unknown default:
+            break
         }
     }
     
@@ -317,7 +319,7 @@ extension MediaManager: PHPickerViewControllerDelegate {
     
 }
 
-extension MediaManager: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension MediaAccessManager: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     private func openCamera() {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
