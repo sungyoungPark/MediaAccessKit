@@ -280,7 +280,7 @@ extension LimitedLibraryPickerViewController: UICollectionViewDataSource, UIColl
 }
 
 extension LimitedLibraryPickerViewController: PHPhotoLibraryChangeObserver {
-    func photoLibraryDidChange(_ changeInstance: PHChange) {
+    nonisolated func photoLibraryDidChange(_ changeInstance: PHChange) {
         DispatchQueue.main.async {
             print("권한 변경 감지됨 — 새로 fetch")
             self.reloadAssets()
