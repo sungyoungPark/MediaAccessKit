@@ -13,3 +13,7 @@
 3. GitHub에서 추가하려는 라이브러리의 URL을 입력합니다.
 4. 원하는 버전을 선택합니다.
 5. 프로젝트에 추가할 타겟을 선택하고 **Add Package** 버튼을 클릭합니다.
+
+## ■ 샘플 앱 화면
+
+![Image](https://github.com/user-attachments/assets/f1c4be32-b492-45f5-8dae-92c87f8b5762)
