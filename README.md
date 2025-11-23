@@ -5,6 +5,11 @@
 + 언어: Swift
 + Deployment Target: iOS 14.0
 
+## 요약
++ 앱에서 카메라와 앨범에서 이미지 혹은 동영상을 가져올때 뜨는 권한 창을 매번 구현하고,
+  ios14 이후에 나온 "선택 사진" 옵션에 대응하여 선택된 이미지를 collectionView로 보여준다.
+  카메라나 앨범을 사용하게 될때, MediaAccessManager.shared.presentMediaOptions 함수를 사용해주면 된다.
+
 ## 사용법
 + Xcode에서 Swift Package Manager(SPM) 추가
 
@@ -16,4 +21,5 @@
 
 ## ■ 샘플 앱 화면
 
+![Image](https://github.com/user-attachments/assets/88b4717b-555f-4948-a10e-47efb9c9f50d)
 ![Image](https://github.com/user-attachments/assets/f1c4be32-b492-45f5-8dae-92c87f8b5762)
