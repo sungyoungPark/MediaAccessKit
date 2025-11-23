@@ -22,4 +22,5 @@
 ## ■ 샘플 앱 화면
 
 ![Image](https://github.com/user-attachments/assets/88b4717b-555f-4948-a10e-47efb9c9f50d)
+
 ![Image](https://github.com/user-attachments/assets/f1c4be32-b492-45f5-8dae-92c87f8b5762)
