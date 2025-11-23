@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = .white
         let button = UIButton(type: .system)
         button.setTitle("MediaAccess", for: .normal)
         button.backgroundColor = .systemBlue
@@ -43,6 +43,11 @@ class ViewController: UIViewController {
         } completion: { [weak self] item in
             print("외부 completion ---", item.count)
             
+            DispatchQueue.main.async {
+                let galleryVC = MediaGalleryViewController(mediaItems: item)
+                self?.navigationController?.pushViewController(galleryVC, animated: true)
+            }
+          
         }
     }
     
