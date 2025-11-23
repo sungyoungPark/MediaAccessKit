@@ -7,9 +7,9 @@ import PhotosUI
 
 // MARK: - 데이터 모델, 메일에 첨부할 파일 정보
 public struct MediaItem {
-    let data: Data          // 파일 데이터
-    let mimeType: String    // MIME 타입 (예: image/jpeg, video/mp4)
-    let fileName: String    // 파일 이름
+    public let data: Data          // 파일 데이터
+    public let mimeType: String    // MIME 타입 (예: image/jpeg, video/mp4)
+    public let fileName: String    // 파일 이름
 }
 
 @MainActor
