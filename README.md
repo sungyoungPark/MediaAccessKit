@@ -24,3 +24,8 @@
 ![Image](https://github.com/user-attachments/assets/88b4717b-555f-4948-a10e-47efb9c9f50d)
 
 ![Image](https://github.com/user-attachments/assets/f1c4be32-b492-45f5-8dae-92c87f8b5762)
+
+
+## ■ 사용 예시
+
+![Image](https://github.com/user-attachments/assets/0348b262-1577-436b-bb44-6d4552fdd79d)
